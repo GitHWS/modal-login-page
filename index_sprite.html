@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./asset/css/style_sprite.css" />
+  </head>
+  <body>
+    <section class="login_page_wrapper">
+      <h1 class="login_logo">
+        <img src="./asset/images/weniv-logo.svg" alt="위니브 로고" />
+      </h1>
+      <p class="login_text">위니브를 더 즐겁고 편리하게 이용하세요.</p>
+      <button type="button" class="login-openModal_btn">로그인</button>
+    </section>
+
+    <section class="modal_wrapper">
+      <div class="modal_title_box">
+        <h2 class="modal_title">로그인 또는 회원가입</h2>
+        <button type="button" class="modal_close">
+          <img src="./asset/images/close.svg" alt="닫기" />
+        </button>
+      </div>
+      <form>
+        <fieldset>
+          <legend class="sr-only">로그인 정보 입력</legend>
+          <p class="modal_login_text">
+            위니브에서 여러분의 궁금증을 해결하세요! :)
+          </p>
+          <input
+            type="text"
+            placeholder="아이디"
+            class="input_style"
+            required
+          />
+          <input
+            type="password"
+            placeholder="비밀번호"
+            class="input_style"
+            required
+          />
+          <div class="modal_checkbox">
+            <input
+              type="checkbox"
+              id="login_status"
+              class="login_status_checkbox sr-only"
+            />
+            <img
+              src="asset/images/check-box.png"
+              class="login_status_img"
+              alt="체크안됨"
+            />
+            <label for="login_status" class="login_status_label"
+              >로그인 상태 유지</label
+            >
+          </div>
+          <button type="submit" class="modal_login_btn">로그인</button>
+          <div class="login_service">
+            <a href="#">회원가입</a>
+            <span class="divider"></span>
+            <a href="#">아이디/비밀번호 찾기</a>
+          </div>
+        </fieldset>
+      </form>
+      <div class="or">또는</div>
+      <div class="social_login_btn clear_fix">
+        <a href="#">구글 계정으로 로그인</a>
+        <a href="#">페이스북 계정으로 로그인</a>
+        <a href="#">네이버 계정으로 로그인</a>
+        <a href="#">카카오톡 계정으로 로그인</a>
+      </div>
+    </section>
+    <script src="./asset/js/main.js"></script>
+  </body>
+</html>
